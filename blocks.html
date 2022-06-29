@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function foo(){
+            var fruit = 'apple';
+            document.write('inside function:',fruit);
+        }
+        foo();
+        function  food  (){ 
+            if  (  true  ){ 
+            var  fruit1 =  'apple'  ;   //exist in function  scope 
+            const  fruit2 =  'banana'  ;   //exist in block  scope 
+            let  fruit3 =  'strawberry'  ; 
+              //exist in block  scope 
+            } 
+            document.write(fruit1); 
+            document.write(fruit2); 
+            document.write(fruit3); 
+            } 
+        food();
+    </script>
+</body>
+</html>
